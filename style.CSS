@@ -1,7 +1,12 @@
+body {
+    display: flex;
+}
+
 .child {
     color: red;
-    background-color: black;
-    flex-basis: 6.25%;
+    border: black solid 3px;
+    width: 6.25%;
+    box-sizing: border-box;
 }
 
 .container {
@@ -9,5 +14,12 @@
     height:auto;
     flex-flow: row wrap;
     color: red;
-    align-content: space-between;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.colorPixel {
+    background-color:black;
 }

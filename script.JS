@@ -5,7 +5,14 @@ for (i=0; i<16; i++) {
     for (j=0; j<16; j++) {
         const element = document.createElement("div");
         element.classList.add('child');
-        element.textContent = "lol";
+        element.textContent = "";
         container.appendChild(element);
     }
 }
+
+const elements = document.querySelectorAll(".child");
+elements.forEach((element) => {
+    element.addEventListener("mouseover", () => {
+        element.classList.add("colorPixel");}
+    );
+});
