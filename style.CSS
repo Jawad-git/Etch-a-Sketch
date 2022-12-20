@@ -1,0 +1,13 @@
+.child {
+    color: red;
+    background-color: black;
+    flex-basis: 6.25%;
+}
+
+.container {
+    display: flex;
+    height:auto;
+    flex-flow: row wrap;
+    color: red;
+    align-content: space-between;
+}
